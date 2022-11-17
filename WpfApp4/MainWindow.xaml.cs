@@ -64,9 +64,18 @@ namespace WpfApp4
             thirdRow[3] = "divyepankaj118103@gmail.com";
             thirdRow[4] = "3327/139C/47 Anand Nager, Rewari";
 
+            DataRow fourthRow = dt.NewRow();
+            fourthRow[0] = 4;
+            fourthRow[1] = "Navdeep";
+            fourthRow[2] = "14";
+            fourthRow[3] = "divyepankaj118103@gmail.com";
+            fourthRow[4] = "3327/139C/47 Anand Nager, Rewari";
+
             dt.Rows.Add(firstRow);
             dt.Rows.Add(secondRow);
             dt.Rows.Add(thirdRow);
+            dt.Rows.Add(fourthRow);
+
 
             myDataGrid.ItemsSource = dt.DefaultView;
 
